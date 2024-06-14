@@ -1,0 +1,15 @@
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list id="sidenav">
+      <ion-item (click)="menuItemHandler()">Main Menu</ion-item>
+  <ion-item-group submenu [class.visible]="showSubmenu">
+    <ion-item submenu-item>Sub menu item</ion-item>
+    <ion-item submenu-item>Sub menu item</ion-item>
+    <ion-item submenu-item>Sub menu item</ion-item>
+  </ion-item-group>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+
